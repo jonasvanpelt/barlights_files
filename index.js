@@ -28,5 +28,15 @@ $(document).ready(function() {
 				}
 			});
 		});
+
+		$( "#autoColor" ).click(function() {
+		  $.ajax({
+				type : "GET",
+				url : "autoColor.esp",
+				dataType : "xml",
+				success : function(response) {
+				}
+			});
+		});
 	});
 
